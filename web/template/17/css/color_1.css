@@ -1,0 +1,52 @@
+@charset "utf-8";
+body,.w-header{background:#fff;}
+.w-nav > .nav_inner > li:hover > a, .w-nav > .nav_inner > li:hover > .li-parent-div > a, .w-nav > .nav_inner > li.active > a, .w-nav > .nav_inner > li.active > .li-parent-div > a{  color:#040404;}
+/*---------------footer-----------------------*/
+.w-footer-in{ border:0;}
+/*-------------新闻--------------------*/
+.newsDetail .newsTitle{color:#000000;}
+.w-News-list .news-com .news-h .news-kind, .newsDetail .newsTitle, .w-News-list8 .news-item .news-com .news-h a.news-kind{ color:#000000;}
+/*-----------------------会员中心和购物车--------------------*/
+.body-login{background:url(../images/bodybg.png) repeat;}
+.sign-content-A{ background-image:url("../images/signboxbg.png");}
+.login-button-A{background-image:url("../images/signbtnbg.png");}
+.login-checkA input.checked[type="checkbox"] + label{background-image:url("../images/login-checked.png");}
+.login-input-A,.login-button-A,.login-checkA label{border-color:#888;}
+.w-admin-top .w-sign .w-admin-register, .w-admin-top .w-sign .w-admin-person,.w-admin-shopCart a .fa-shopping-cart,.order-progress .order-progress-text > div.cur,.orderA .orderA-statue .orderA-s,.orderA .order-route .order-route-notice a,.orderA .orderA-statue .orderA-btn .btn-green-A,.w-admin-sidemenu li.cur a,.payStatue-nav a.cur,.personInfoA .uploadimgA{ color:#000000;}
+.order-progress .order-progress-line .order-progress-line-sec.cur .curcle{background-image:url("../images/progress_complete.png");}
+.order-progress .order-progress-line .order-progress-line-sec.cur .line,.checkbox_tel input[type="checkbox"]:checked + label,.btn-greenC,.btn-greenA{background-color:#000000;}
+.orderA .orderA-statue .orderA-btn .btn-green-A,.section-con-new,.payStatue-nav a.cur{ border-color:#000000;}
+.orderSum-item .imgB,.order-routes .order-routeItem.cur .order-routeItem-img .imgA{background-color:#F9DFE7;}
+.order-routes .order-routeItem.cur .order-routeItem-img .lineA{background-image:url(../images/routelinecur.png);}
+/*----------------------标题------------------------*/
+.title-h-in h2{ color:#000000;}
+.w-title1 span,.w-title16 span{ color:#000000;}
+.w-title1 .simpline{background:#000000;}
+.w-title5 h2{border-color:#000000;}
+.w-title7{ border-left-color:#000000;}
+.w-title7 .more{background-color:#000000;}
+.w-title15{border-color:#000000;}
+@media (min-width:960px){
+	.section-user .userInfoA{width:40%;}
+	.section-user .user-orderSum{width:60%;}
+}
+@media (min-width:768px){
+	.w-nav li a{color:#666;}
+	.w-nav .submenu{background:#000000;}
+    .w-nav .submenu li{ border-bottom:1px solid #333;}
+	.w-nav .submenu li:last-child{border-bottom:0;}
+	.w-admin-header .w-nav > .nav_inner > li:hover > a, .w-admin-header .w-nav > .nav_inner > li:hover > .li-parent-div > a, .w-admin-header .w-nav > .nav_inner > li.active > a, .w-admin-header .w-nav > .nav_inner > li.active > .li-parent-div > a{  color:#040404;}
+	
+	.w-com-menu-V > .w-com-menu-in > .ul-parent > .li-parent > .div-parent{ background:none; border-color:#7e7e7e;}
+    .w-com-menu-V > .w-com-menu-in > .ul-parent > .li-parent.cur > .div-parent,.w-com-menu-V > .w-com-menu-in > .ul-parent > .li-parent:hover > .div-parent{ background:#E9E9E9;}
+    .w-com-menu-H >.w-com-menu-in>.ul-parent> li:hover >.div-parent a,.w-com-menu-H >.w-com-menu-in>.ul-parent> li.cur >.div-parent a{ background:#E9E9E9; color:#787878;}
+.w-com-menu-H .ul-submenu li:hover> .div-parent >a,.w-com-menu-H .ul-submenu li.cur> .div-parent >a{ background:#000000; color:#fff;}
+}
+@media (max-width:767px){
+	.w-nav > .nav_inner > li:hover > a, .w-nav > .nav_inner > li:hover > .li-parent-div > a, .w-nav > .nav_inner > li.active > a, .w-nav > .nav_inner > li.active > .li-parent-div > a{background:#333; color:#fff;}
+	.w-com-menu li >.div-parent:hover a,.w-com-menu  li.cur >.div-parent a{ background:#333; }
+	.w-com-menu .ul-submenu li > .div-parent:hover a, .w-com-menu .ul-submenu li.cur > .div-parent a{background:#555;}
+	/*-----------------------会员中心和购物车--------------------*/
+	.w-admin-nav{background:#3d3d3d;}
+    .order-routes .order-routeItem.cur .order-routeItem-img .lineA{background-image:url(../images/routelinecurTel.png);}
+}

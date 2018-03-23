@@ -1,0 +1,68 @@
+@charset "utf-8";
+.w-header,.body-login .w-admin-header, .w-admin-header{background-image:url(../images/headerbg_1.png);}
+.w-nav > .nav_inner > li:hover > a, .w-nav > .nav_inner > li:hover > .li-parent-div > a, .w-nav > .nav_inner > li.active > a, .w-nav > .nav_inner > li.active > .li-parent-div > a{ background:#E33189; color:#fff; }
+.w-logo h1, .w-logo a{color:#E33189;}
+.searchBoxTop .w-search .input-search-w{background-color:#F08CBE; color:#4A2F5C;}
+.searchBoxTop .w-search .search-btn-w{background-color:#E33189;}
+/*---------------------组件------------------*/
+.btn-default-w{background:#E33189;}
+.icon-social{background-image:url(../images/icon-social-w-1.png);}
+.search-defaut-w .search-btn-w{background:url("../images/input-search-white.png") no-repeat center #E33189;}
+/*-------------------footer-----------------*/
+.w-footer{ background:url(../images/footbg_1.png) repeat;}
+.w-footer .search-defaut-w .search-btn-w{background-color:#E33189;}
+.w-footer .btn-default-w{background-color:#E33189;}
+/*------------------系统--------------------------*/
+.systitle{background-color:#462B58;}
+.w-prd-list-cell .w-prd-btns a.btn-buy{background-color:#E33189; border-color:#E33189;}
+/*-------------新闻--------------------*/
+.newsDetail .newsTitle{ color:#232323;}
+.w-News-list .news-com .news-h .news-kind,.w-adNews a.news-kind{ color:#E33189;}
+.w-News-list5 li .news-item .data-day, .w-adNews1 li .news-item .data-day{background-color:#E33189;}
+.w-adNews3 .w-adNews-imgs .news-img .news-buoy-content .mask{background:#E33189;}
+.w-adNews3,.w-adNews3 .w-adNews-imgs .adNews3prev,.w-adNews3 .w-adNews-imgs .adNews3next{background-color:#4A2F5C;}
+.w-adNews3 .w-adNews-texts li .w-adNews-textH a,.w-adNews3 .w-adNews-texts li .w-adNews-textH p,.w-adNews3 .w-adNews-texts li .w-adNews-textH h3,.w-adNews3 .w-adNews-texts li .w-adNews-textH .news-sum{ color:#fff;}
+.w-adNews3 .w-adNews-texts li .numberQ{border-color:#E33189; color:#E33189;opacity:0.9; *filter:alpha(opacity=90); filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);}
+.w-adNews3 .w-adNews-texts li{border-color:#A497AD;}
+.w-adNews3 .w-adNews-imgs .adNews3prev{background-image:url("../images/adNews3prev.png");}
+.w-adNews3 .w-adNews-imgs .adNews3next{background-image:url("../images/adNews3next.png");}
+/*-----------------------会员中心和购物车--------------------*/
+.w-admin-top .w-sign .w-admin-register, .w-admin-top .w-sign .w-admin-person,.w-admin-shopCart a .fa-shopping-cart,.order-progress .order-progress-text > div.cur,.orderA .orderA-statue .orderA-s,.orderA .order-route .order-route-notice a,.orderA .orderA-statue .orderA-btn .btn-green-A,.w-admin-sidemenu li.cur a,.payStatue-nav a.cur,.personInfoA .uploadimgA{ color:#E33189;}
+.order-progress .order-progress-line .order-progress-line-sec.cur .curcle{background-image:url("../images/progress_complete_1.png");}
+.order-progress .order-progress-line .order-progress-line-sec.cur .line,.checkbox_tel input[type="checkbox"]:checked + label,.btn-greenC,.btn-greenA{background-color:#E33189;}
+.orderA .orderA-statue .orderA-btn .btn-green-A,.section-con-new,.payStatue-nav a.cur{ border-color:#E33189;}
+.orderSum-item .imgB,.order-routes .order-routeItem.cur .order-routeItem-img .imgA{background-color:#FCE4F0;}
+.order-routes .order-routeItem.cur .order-routeItem-img .lineA{background-image:url(../images/routelinecur_1.png);}
+/*----------------------标题------------------------*/
+.title-h-in h2{ color:#E33189;}
+.w-title1 span,.w-title16 span{ color:#E33189;}
+.w-title1 .simpline{background:#E33189;}
+.w-title5 h2{border-color:#E33189;}
+.w-title7{ border-left-color:#E33189;}
+.w-title7 .more{background-color:#E33189;}
+.w-title15{border-color:#E33189;}
+@media (min-width:768px){
+	.w-header,.w-admin-header{border-color:#e33189;}
+	.topLogBox{ background-image:url("../images/topLogBoxbg_1.png");}
+	.col-logo{border-color:#3E254F;}
+	.w-nav{border-color:#5E3E76;}
+	.w-nav > .nav_inner > li > a, .w-nav > .nav_inner > li > .li-parent-div > a{color:#d898ce;}
+	.w-nav > .nav_inner > li:hover > a, .w-nav > .nav_inner > li:hover > .li-parent-div > a, .w-nav > .nav_inner > li.active > a, .w-nav > .nav_inner > li.active > .li-parent-div > a{border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;}
+	.w-nav >.nav_inner>li> .li-parentOne-div{padding-bottom:10px;}
+	.w-nav >.nav_inner>li:hover> .li-parentOne-div{ background:url(../images/navCur_1.png) no-repeat center bottom;}
+	.w-nav .submenu ul{background:#E33189; opacity:0.9; *filter:alpha(opacity=90); filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90); }
+    .w-nav .submenu li{ border-bottom:1px solid #D61D79;}
+	.w-nav .submenu li:last-child{border-bottom:0;}
+	.w-nav .submenu li:hover > a, .w-nav .submenu  li:hover > .li-parent-div > a, .w-nav .submenu li.active > a, .w-nav .submenu li.active  >.li-parent-div > a{ background: #D61D79;}
+	
+	.w-com-menu-V > .w-com-menu-in > .ul-parent > .li-parent > .div-parent{ background:#E33189; border-color:#EA60A5;}
+    .w-com-menu-H >.w-com-menu-in>.ul-parent> li:hover >.div-parent a,.w-com-menu-H >.w-com-menu-in>.ul-parent> li.cur >.div-parent a{ background:#E33189; color:#fff;}
+    .w-com-menu-H .ul-submenu li:hover> .div-parent >a,.w-com-menu-H .ul-submenu li.cur> .div-parent >a{ background:#E33189; color:#fff;}
+}
+@media (max-width:767px){
+	.w-header,.w-admin-header{color:#E33189;}
+	.w-com-menu li >.div-parent:hover a,.w-com-menu  li.cur >.div-parent a{ background:#373737; }
+	/*-----------------------会员中心和购物车--------------------*/
+	.w-admin-nav{background:#3d3d3d;}
+	.order-routes .order-routeItem.cur .order-routeItem-img .lineA{background-image:url(../images/routelinecurTel_1.png);}
+}

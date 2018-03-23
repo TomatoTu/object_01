@@ -1,0 +1,91 @@
+.center,
+.slide-page{ text-align:center;}
+
+
+/* set border-box so that percents can be used for width, padding, etc (personal preference) */
+.w-slide .cycle-slideshow, .w-slide .cycle-slideshow * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+
+.w-slide .cycle-slideshow { width: 45%; min-width: 200px; max-width: 500px; margin: 10px auto; padding: 0; position: relative;
+    background: url(http://malsup.github.com/images/spinner.gif) 50% 50% no-repeat;
+
+ }
+
+/* slideshow images (for most of the demos, these are the actual "slides") */
+/*.w-slide .cycle-slideshow img { 
+    
+    some of these styles will be set by the plugin (by default) but setting them here
+    helps avoid flash-of-unstyled-content
+   
+    position: absolute; top: 0; left: 0;
+    width: 100%; padding: 0; display: block;
+}
+*/
+
+/* in case script does not load */
+.w-slide .cycle-slideshow img:first-child {
+    position: static; z-index: 100;
+}
+
+/* pager */
+.w-slide .cycle-pager { 
+    text-align: center; width: 100%; z-index: 500; position: absolute; bottom:0px; overflow: hidden;
+}
+.w-slide .cycle-pager span { 
+    font-family: arial; font-size: 50px; width: 16px; height: 16px; 
+    display: inline-block; color: #ddd; cursor: pointer; 
+}
+.w-slide .cycle-pager span.cycle-pager-active { color: #D69746;}
+.w-slide .cycle-pager > * { cursor: pointer;}
+
+
+/* caption */
+.w-slide .cycle-caption { position: absolute; color: white; bottom: 15px; right: 15px; z-index: 700; }
+
+
+/* overlay */
+.w-slide .cycle-overlay { 
+    font-family: tahoma, arial;
+    position: absolute; bottom: 0; width: 100%; z-index: 600;
+    background: black; color: white; padding: 15px; opacity: .5;
+}
+
+
+/* prev / next links */
+.w-slide .cycle-prev, .w-slide .cycle-next { position: absolute; top: 0; width: 30%; opacity: 0; filter: alpha(opacity=0); z-index: 800; height: 100%; cursor: pointer; }
+.w-slide .cycle-prev { left: 0;  background: url(http://malsup.github.com/images/left.png) 50% 50% no-repeat;}
+.w-slide .cycle-next { right: 0; background: url(http://malsup.github.com/images/right.png) 50% 50% no-repeat;}
+.w-slide .cycle-prev:hover, .cycle-next:hover { opacity: .7; filter: alpha(opacity=70) }
+
+.w-slide .disabled { opacity: .5; filter:alpha(opacity=50); }
+
+
+/* display paused text on top of paused slideshow */
+.w-slide .cycle-paused:after {
+    content: 'Paused'; color: white; background: black; padding: 10px;
+    z-index: 500; position: absolute; top: 10px; right: 10px;
+    border-radius: 10px;
+    opacity: .5; filter: alpha(opacity=50);
+}
+
+/* 
+    media queries 
+    some style overrides to make things more pleasant on mobile devices
+*/
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+    .w-slide .cycle-slideshow { width: 200px;}
+    .w-slide .cycle-overlay { padding: 4px }
+    .w-slide .cycle-caption { bottom: 4px; right: 4px }
+}
+
+.w-slide-page_pos1{ position:relative; padding-top:30px;}
+.w-slide-page_pos1 .slide-page{ position:absolute; top:0; width:100%;}
+
+.w-slide-page_pos2{ position:relative; padding-left:30px;}
+.w-slide-page_pos2 .slide-page{ position:absolute; left:0; top:0;}
+.w-slide-page_pos2 .slide-page a{ display:block;}
+
+.w-slide-page_pos3{ position:relative; padding-left:30px;}
+.w-slide-page_pos3 .slide-page{ position:absolute; right:0; top:0;}
+.w-slide-page_pos3 .slide-page a{ display:block;}

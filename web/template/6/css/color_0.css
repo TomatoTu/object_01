@@ -1,0 +1,40 @@
+@charset "utf-8";
+.w-nav > .nav_inner > li:hover > a, .w-nav > .nav_inner > li:hover > .li-parent-div > a, .w-nav > .nav_inner > li.active > a, .w-nav > .nav_inner > li.active > .li-parent-div > a{ background:url(../images/header-cur.jpg) no-repeat center bottom; background-size:100% 100%;}
+
+/*-------------新闻--------------------*/
+.newsDetail .newsTitle{color:#012B44;}
+.w-News-list .news-com .news-h .news-kind,.w-adNews a.news-kind{color:#012B44;}
+.w-adNews3 .w-adNews-texts li .numberQ{color:#012B44;}
+.w-adNews3 .w-adNews-imgs .news-img .news-buoy-content .mask{background:#012B44;}
+/*-----------------------会员中心和购物车--------------------*/
+.w-admin-header,.body-login .w-admin-header{ background:#012B44;}
+.w-admin-top .w-sign .w-admin-register, .w-admin-top .w-sign .w-admin-person,.w-admin-shopCart a .fa-shopping-cart,.order-progress .order-progress-text > div.cur,.orderA .orderA-statue .orderA-s,.orderA .order-route .order-route-notice a,.orderA .orderA-statue .orderA-btn .btn-green-A,.w-admin-sidemenu li.cur a,.payStatue-nav a.cur,.personInfoA .uploadimgA{ color:#012B44;}
+.order-progress .order-progress-line .order-progress-line-sec.cur .curcle{background-image:url("../images/progress_complete.png");}
+.order-progress .order-progress-line .order-progress-line-sec.cur .line,.checkbox_tel input[type="checkbox"]:checked + label,.btn-greenC,.btn-greenA{background-color:#012B44;}
+.orderA .orderA-statue .orderA-btn .btn-green-A,.section-con-new,.payStatue-nav a.cur{ border-color:#012B44;}
+.orderSum-item .imgB,.order-routes .order-routeItem.cur .order-routeItem-img .imgA{background-color:#77CBFD;}
+.order-routes .order-routeItem.cur .order-routeItem-img .lineA{background-image:url(../images/routelinecur.png);}
+/*----------------------标题------------------------*/
+.title-h-in h2{color:#012B44;}
+.w-title1 h2,.w-title16 h2,.w-title3 h2{  font-size:165%;}
+.w-title1 span,.w-title16 span{ color:#012B44;}
+.w-title1 .simpline{background:#012B44;}
+.w-title5 h2{border-color:#012b44;}
+.w-title15{border-color:#012b44;}
+@media (min-width:768px){
+	.w-nav .submenu{background:#012B44;}
+    .w-nav .submenu li{ border-bottom:1px solid #014062;}
+	.w-nav .submenu li:last-child{border-bottom:0;}
+	
+	.w-com-menu-V > .w-com-menu-in > .ul-parent > .li-parent > .div-parent{ background:#012B44; border-color:#02578A;}
+    .w-com-menu-H >.w-com-menu-in>.ul-parent> li:hover >.div-parent a,.w-com-menu-H >.w-com-menu-in>.ul-parent> li.cur >.div-parent a{ background:#F6BC1E; color:#012B44;}
+    .w-com-menu-H .ul-submenu li:hover> .div-parent >a,.w-com-menu-H .ul-submenu li.cur> .div-parent >a{ background:#F6BC1E;}
+}
+@media (max-width:767px){
+	.w-com-menu li >.div-parent:hover a,.w-com-menu  li.cur >.div-parent a{ background:#F6BC1E; }
+	.w-com-menu .ul-submenu li > .div-parent:hover a, .w-com-menu .ul-submenu li.cur > .div-parent a{background:#F6BC1E;}
+	.w-com-menu li> .div-parent:hover >a,.w-com-menu li.cur> .div-parent >a,.w-com-menu li> .div-parent:hover >.fa,.w-com-menu li.cur> .div-parent >.fa{color:#012B44;}
+	/*-----------------------会员中心和购物车--------------------*/
+	.w-admin-header,.body-login .w-admin-header{ background:#012B44;}
+    .order-routes .order-routeItem.cur .order-routeItem-img .lineA{background-image:url(../images/routelinecurTel.png);}
+}

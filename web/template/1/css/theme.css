@@ -1,0 +1,110 @@
+@charset "utf-8";
+/*
+描述:cavan响应式主题样式表第1套
+作者:wangxb
+*/
+/*默认页面主体样式定义*/
+body{ color:#474b54;}
+a{ color:#474b54;}
+.w-main .row,.w-header .row{ max-width:1004px; margin:0 auto;}
+/*---------------------header-----------------------*/
+.w-header{ position:relative; background:#2a2a2a; color:#c6c6c7;}
+.col-logo{float:left;}
+.w-logo{ height:75px; min-width:40px;}
+.w-logo h1{ font-size:42px; }
+.w-logo h1,.w-logo a{color:#fff;}
+.col-right{ /*padding-top:25px;*/ font-size:12px;}
+.w-nav{float:right; font-size:14px;}
+.w-nav ul{display:block;}
+.w-nav li a{ text-decoration:none;color:#c6c6c7; line-height:22px; padding:0 18px;}
+.w-nav > .nav_inner > li > .submenu{ top:75px; left:0;}
+.w-nav .submenu a{ color:#fff;}
+.col-com{float:right;}
+.w-languege{float:right; padding-top:2px;margin-left:12px;}
+.w-languege a{margin:0 6px; color:#fff;}
+.w-loginRegister,.w-shopCart,.w-header .w-search{float:right; margin-bottom:10px;}
+.w-loginRegister{padding-top:2px;}
+.w-loginRegister a{ color:#33d8af; margin-left:12px;}
+.w-shopCart{margin-left:30px; padding-top:2px;}
+.w-shopCart a{ color:#fff; text-decoration:none;}
+.w-shopCart i{ background:url(../images/shopCart.png) no-repeat center; width:19px; height:19px; vertical-align:middle; display:inline-block; *zoom:1;}
+.w-header .w-search{ position:relative; margin-left:5px;}
+.w-header .w-search .input-search-w{ background:none; width:85px; height:20px; line-height:20px;  padding: 0 25px 0 5px; border:1px solid #c2c2c2; border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;  }
+.w-header .w-search .search-btn-w{ position:absolute; width:20px; height:20px; right:5px; top:50%; margin-top:-10px; background:url(../images/header_search.png) no-repeat center; background-size:contain; cursor:pointer;}
+.w-header .w-search .search-btn-w span{ display:none;}
+/*-----------------------banner------------------*/
+
+/*---------------footer------------------*/
+.w-footer{ background:#242424; color:#767676; line-height:2;}
+.w-footer a{color:#767676;}
+.w-footer-in{max-width:1004px; margin:0 auto;} 
+/*----------------------------组件-----------------------*/
+.btn-default-w{border:1px solid #919191; color:#474b54; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+.btn-default-b:hover,.btn-default-b:focus{border:1px solid #919191 !important; color:#474b54 !important; background:none !important;}
+.search-defaut-w .search-btn-w:hover{background-color:transparent;}
+/*--------------------系统------------------------*/
+.systitle{background:#26C69E; color:#fff;}
+/*-----------------------------产品----------------------*/
+.w-prd-list-cell .w-prd-btns a{border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px;}
+.w-prd-list-cell .w-prd-btns a.btn-buy{ background:#33d8ae; border-color:#33d8ae; color:#fff;}
+/*----------------------------新闻-------------------------*/
+.w-News-list a{color:#5a5a5a;}
+.w-News-list .news-com .news-sum{color:#6f6f6f;}
+.newsDetail,.newsDetail a{ color:#767676;}
+.w-adNews3 .w-adNews-texts li .numberQ{color:#33d8ae;}
+.w-adNews3 .w-adNews-imgs .news-img .news-buoy-content .mask{ background:#33d8ae;}
+/*-----------------------会员中心和购物车--------------------*/
+.w-admin-header{ background:#00CF9B;}
+.back_login{color:#fff;}
+@media (max-width:1024px){
+	.w-main .row,.w-header .row,.w-footer-in{ width:100%;}
+	.col-table{margin:0;}
+}
+@media (min-width:768px) and (max-width:1024px){
+	.wrap-content-in{padding:40px 10px;}
+}
+@media (min-width:768px){
+.w-logo h1{ line-height:75px;}
+.col-com{ padding-top:25px;}
+.w-nav > .nav_inner > li > a,.w-nav > .nav_inner > li > .li-parent-div > a{ line-height:75px;}
+}
+@media (min-width:767px) {
+	.w-nav .li-parentOne-div .fa{ display:none;}
+	/*------------------------菜单---------------------------*/
+	.w-com-menu-H li:hover a,.w-com-menu-H li.cur a{ color:#33d8af;}
+.w-com-menu-H .ul-submenu ul{ background:#ececec; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+.w-com-menu-H .ul-submenu li:first-child > .div-parent{border-top-left-radius:5px; -moz-border-top-left-radius:5px; -webkit-border-top-left-radius:5px; border-bottom-left-radius:5px; -moz-border-bottom-left-radius:5px; -webkit-border-bottom-left-radius:5px;}
+.w-com-menu-H .ul-submenu li:last-child > .div-parent{border-top-right-radius:5px; -moz-border-top-right-radius:5px; -webkit-border-top-right-radius:5px; border-bottom-right-radius:5px; -moz-border-bottom-right-radius:5px; -webkit-border-bottom-right-radius:5px;}
+.w-com-menu-H .ul-submenu li:hover> .div-parent,.w-com-menu-H .ul-submenu li.cur> .div-parent{ background:#33d8af;}
+.w-com-menu-H .ul-submenu li:hover> .div-parent >a,.w-com-menu-H .ul-submenu li.cur> .div-parent >a{ color:#fff;}
+}
+@media (max-width:767px) {
+	html{width:100%; height:100%; overflow-x:hidden;}
+	body{ height:100%;min-width:100%;}
+	.body{ padding-top:1.56rem;}
+	/*--------------------header---------------------*/
+	.w-header{position:fixed; top:0; left:0; width:100%; padding-top:0; height:1.56rem;  background:#2a2a2a; z-index:999; color:#33d8af;}
+	.col-logo{float:none; text-align:center;}
+	.w-logo{ padding:0 3em; height:auto; min-width:auto;}
+	.w-logo h1{ font-size:0.7rem; margin-top:0.35rem; margin-bottom:0;}
+	.w-logo-img{ display:block; padding:0.25rem;}
+	.w-logo-img img{max-height:1.06rem;}
+	.col-right{position:fixed;left:0; width:100%; background:#3d3d3d; top:1.56rem; bottom:0; margin-top:0px; display:none; overflow-y:auto; padding:0;}
+	.col-com{ border-bottom:1px solid #2A2A2A; border-top:1px solid #484848; float:none;}
+	.col-com:first-child{ border-top:none;}
+	.w-languege{margin:1em;}
+	.w-loginRegister,.w-shopCart{ float:left; margin:1em;}
+	.w-header .w-search{ float:none; margin:1em;}
+	.w-header .w-search .input-search-w{ width:100%; box-sizing:border-box; height:3em; line-height:3em;}
+	.w-nav{ float:none;  }
+    .w-nav ul{list-style:none; padding-left:0;}
+    .w-nav li a{ display:block; padding:1em 5px; text-align:center; color:#999;}
+	.w-nav > .nav_inner > li > .submenu{top:0;}	
+	/*-----------------------会员中心和购物车--------------------*/
+	.w-admin-header{position:fixed; top:0; left:0; width:100%; padding-top:0; height:1.56rem;  background:#00CF9B; z-index:999; color:#fff;}
+}	
+@media only screen and (min-width:768px) and (max-width:960px) {
+	.w-loginRegister, .w-shopCart, .w-header .w-search{margin-right:15px;}
+	.w-shopCart{margin-left:15px;}
+}
+

@@ -1,0 +1,147 @@
+@charset "utf-8";
+/*
+描述:cavan响应式主题样式表第4套
+作者:wangxb
+*/
+/*默认页面主体样式定义*/
+body{ color:#767676;}
+a{ color:#5f5f5f;}
+.w-main .row,.w-header .row,.topLogBox .topLogBox-in,.w-footer-in{ max-width:1186px; margin:0 auto;}
+.body{overflow:hidden;}
+/*---------------------header-----------------------*/
+.w-header{ position:relative; }
+.col-logo{ position:relative; z-index:1;}
+.w-logo{ min-height:84px; min-width:40px;}
+.w-logo h1{ font-size:42px; }
+.w-logo h1,.w-logo a{color:#ADCF44;}
+.w-nav{ background:#D799A5; text-align:center; }
+.w-nav > .nav_inner{display:block;}
+.w-nav > .nav_inner > li{ display:inline-block;*display:inline; *zoom:1; float:none;}
+.w-nav li a{ text-decoration:none;color:#fff;padding:0 10px;font-size:14px;}
+.w-nav > .nav_inner > li > a, .w-nav > .nav_inner > li > .li-parent-div > a{line-height:84px; min-width:130px;}
+.w-nav > .nav_inner > li > .submenu{ top:84px; left:0;}
+.w-nav .submenu a{ }
+.topLogBox,.topLogBox a{ font-size:12px;}
+.topLogBox a{ margin:0 6px; text-decoration:none;}
+.w-loginRegister,.w-languege,.w-shopCart{padding-top:2px;}
+.w-shopCart{margin-left:30px;}
+.w-shopCart i{ background:url(../images/shopCart.png) no-repeat center; width:19px; height:19px; vertical-align:middle; display:inline-block; *zoom:1; margin-right:2px;}
+.topLogBox .w-search{ position:relative; margin-left:5px;}
+.topLogBox .w-search .input-search-w{ background:none; width:200px; height:30px; line-height:30px;  padding: 0 30px 0 5px; border:1px solid #999; }
+.topLogBox .w-search .search-btn-w{ position:absolute;width:30px; right:0; top:0; bottom:0; background:url(../images/header_search.png) no-repeat center #D799A5; cursor:pointer; }
+.topLogBox .w-search .search-btn-w span{ display:none;}
+
+
+/*-----------------------banner------------------*/
+.bannerBox{max-width:1186px; margin:0 auto;}
+.bx-wrapper .bx-prev{background-image:url("../images/banner_pre.png") !important; left:0 !important; background-position:left center !important;}
+.bx-wrapper .bx-next{background-image:url("../images/banner_next.png") !important; right:0 !important; background-position:right center !important;}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active{ background:#fff !important;}
+/*---------------footer------------------*/
+.w-footer{ color:#232323; line-height:2;background:url(../images/footbg.png) repeat; }
+.w-footer a{color:#232323;}
+.w-footer .icon-social{background-image:url(../images/icon-social-foot-w.png);}
+/*----------------------------组件-----------------------*/
+.btn-default-w{border:none; color:#fff; padding:0.8em 2.5em; background:#51c4d4; border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px;}
+.btn-default-b:hover{}
+.gallery-mar{margin:10px;}
+.gallery-border{ border:1px solid #CCDADD;}
+.icon-social{background-image:url(../images/icon-social-w.png);}
+/*--------------------系统------------------------*/
+.systitle{background:#ADCF44; color:#fff;}
+/*-----------------------------产品----------------------*/
+.w-prd-list-cell .w-prd-btns a{border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px;}
+.w-prd-list-cell .w-prd-btns a.btn-buy{ background:#51c4d4; border-color:#51c4d4; color:#fff;}
+.w-prd-list-cell .w-prd-infobox,.w-prd-list-cell .w-prd-infobox h2 a{ color:#474b54;}
+/*----------------------------新闻-------------------------*/
+.w-News-list a{color:#6f6f6f;}
+.w-News-list .news-com .news-sum{color:#6f6f6f;}
+.newsDetail,.newsDetail a{ color:#767676;}
+.w-adNews a.news-kind{color:#51C4D4;}
+.w-adNews3 .w-adNews-texts li .numberQ{ color:#51C4D4;}
+.w-adNews3 .w-adNews-imgs .news-img .news-buoy-content .mask{background:#51C4D4;}
+.w-News-list5 li .news-item .data-day,.w-adNews1 li .news-item .data-day{ background:#51C4D4;}
+.w-adNews5 li .news-h{background:url(../images/adnews5h.png) no-repeat left center; padding-left:15px; font-size:130%;}
+.w-adNews5 li .news-item{position:relative;}
+.w-adNews5 li .news-com{padding-bottom:1.5em;}
+.w-adNews5 li .date{position:absolute; right:0; bottom:0;}
+/*-----------------------会员中心和购物车--------------------*/
+.signbox-A .login-h2A,.login-input-A,.register-A a, .password-forget-A a,.login-button-A,.signfoot,.login-checkA span{color:#666;}
+input[class*='login-input-A']::-webkit-input-placeholder{ color:#666;}
+input[class*='login-input-A']:-moz-placeholder{ color:#666;}
+input[class*='login-input-A']::-moz-placeholder{ color:#666;}
+input[class*='login-input-A']:-ms-input-placeholder{ color:#666;}
+@media (min-width:768px){
+	.w-admin-header .w-admin-nav{ float:none; margin-left:0; padding-top:0;}
+	.w-admin-nav > .nav_inner > li > .submenu{top:84px;}
+	.w-header .row{ padding-top:10px;}
+	.w-logo h1{ line-height:84px;}
+	.w-nav .li-parentOne-div .fa{ display:none;}
+	.w-nav .submenu{ box-shadow:0 1px 2px rgba(255,255,255,0.2); -moz-box-shadow:0 1px 2px rgba(255,255,255,0.2); -webkit-box-shadow:0 1px 2px rgba(255,255,255,0.2);opacity:0.95; *filter:alpha(opacity=95); filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=95); }
+	.w-admin-row{position:relative;}
+	.w-admin-shopCart{ position:absolute; right:10px; top:5px; margin-right:0; z-index:2;}
+	.w-admin-shopCart a{background:#fff; padding:7px 15px;}
+	.w-admin-shopCart a span, .w-admin-shopCart a .fa-angle-right{ display:inline-block; *display:inline; *zoom:1;}
+	.w-admin-shopCart a .num{left:98px;}
+	/*---------------------------topLogBox--------------------------*/
+    .topLogBox{ position:absolute; left:0; right:0; top:0; }
+    .topLogBox .topLogBox-in{overflow:hidden; padding:5px 0;}
+    .topLogBox .w-languege,.topLogBox .w-loginRegister,.topLogBox .w-shopCart,.w-header .w-search{float:right; position:relative; z-index:9;}
+	.topLogBox .col-com{ margin-top:10px;}
+    .w-com-menu-H{ border-top:1px solid #e0e0e0; border-bottom:1px solid #e0e0e0;margin-bottom:80px; margin-top:20px;}
+    .w-com-menu-H li{margin:0;}
+    .w-com-menu-H li a{ font-size:18px;}
+    .w-com-menu-H >.w-com-menu-in{display:inline-block; *display:inline; *zoom:1;}
+    .w-com-menu-H >.w-com-menu-in>.ul-parent> li >.div-parent a{ padding:10px 20px; margin:10px 0; min-width:100px; display:inline-block;*display:inline; *zoom:1;}
+    .w-com-menu-H .ul-submenu{ padding-top:26px; top:65px;}
+	.w-com-menu-H .ul-submenu .ul-submenu{ top:36px;}
+    .w-com-menu-H .ul-submenu li .div-parent{margin:0 5px;}
+    .w-com-menu-H .ul-submenu li a{ line-height:2;}
+    .w-com-menu-H .ul-submenu .ul-submenu-up{display:none;}
+}
+@media (max-width:1200px){
+	.w-main .row,.w-header .row,.w-footer-in, .topLogBox .topLogBox-in{ width:100%;}
+	.col-table{margin:0;}
+	.w-nav > .nav_inner > li > a, .w-nav > .nav_inner > li > .li-parent-div > a{ min-width:auto; padding:0 20px;}
+	.w-com-menu-H{margin-left:0;}
+}
+@media (min-width:767px) and (max-width:1200px){
+	.wrap-content-in{padding:40px 10px;}
+}
+@media (max-width:767px) {
+	html{width:100%; height:100%; overflow-x:hidden;}
+	body{ height:100%;min-width:100%;}
+	.body{ padding-top:1.56rem;}
+	
+	/*--------------------header---------------------*/
+	.w-header{position:fixed; top:0; left:0; width:100%; padding-top:0; height:1.56rem;  background:#D799A5; z-index:999; color:#fff;}
+	.col-logo{float:none; text-align:center;}
+	.w-logo{ padding:0 3em; height:auto; min-height:auto; min-width:auto;}
+	.w-logo h1{ font-size:0.7rem; margin-top:0.35rem; margin-bottom:0;}
+	.w-logo-img{ display:block; padding:0.25rem;}
+	.w-logo-img img{max-height:1.06rem;}
+	.col-right{position:fixed;left:0; width:100%; background:#3d3d3d; top:1.56rem; bottom:0; margin-top:0px; display:none; overflow-y:auto; padding:0;}
+	.col-com{ border-bottom:1px solid #2A2A2A; border-top:1px solid #484848; float:none;}
+	.w-languege{ float:left; margin:1em;}
+	.w-loginRegister,.w-shopCart{ float:right; margin:1em;}
+	.w-header .w-search{ float:none; margin:1em;}
+	.w-header .w-search .input-search-w{ width:100%; box-sizing:border-box; height:3em; line-height:3em;}
+	.w-nav{ background:none;}
+    .w-nav ul{list-style:none; padding-left:0;}
+	.w-nav > .nav_inner > li{ display:block;}
+	.w-nav > .nav_inner > li > a, .w-nav > .nav_inner > li > .li-parent-div > a{line-height:3;}
+    .w-nav li a{ display:block; padding:1em 5px; text-align:center; color:#999;}
+	.w-nav > .nav_inner > li > .submenu{top:0;}	
+	.topLogBox, .topLogBox a{color:#fff;}
+	/*-----------------------会员中心和购物车--------------------*/
+	.w-admin-header{position:fixed; top:0; left:0; width:100%; padding-top:0; height:1.56rem; z-index:999; color:#fff;}
+	/*----------------------系统页-------------------*/
+	/*----------------------新闻---------------------------*/
+	.w-adNews5 li .news-h{ font-size:105%;}
+	
+}	
+@media only screen and (min-width:768px) and (max-width:960px) {
+	.w-loginRegister, .w-shopCart, .w-header .w-search{margin-right:15px;}
+	.w-shopCart{margin-left:15px;}
+}
+

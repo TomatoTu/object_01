@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>百度地图</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <style>
+            html, body, #mapContainer {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+            #mapContainer {
+                width: 100%; 
+                text-align: center;
+            }
+            a {
+                color: #06C; 
+                text-decoration: none;
+            }
+            a:visited {
+                color: #06C;
+            }
+        </style>
+
+
+    </head>
+    <body style="margin: 0; padding: 0;">
+        <div id="mapContainer">
+            <div id="map" style="max-width:100%;"></div>
+        </div>
+        <script type="text/javascript">
+            //百度地图API功能
+            function loadJScript() {
+                var script = document.createElement("script");
+                script.type = "text/javascript";
+                script.src = "http://api.map.baidu.com/api?v=2.0&ak=4PoEGYXslgRSbCDUuhiwUs63&callback=init";
+                document.body.appendChild(script);
+
+            }
+            var resizeMessage = function (event) {
+                var imageHeight = document.getElementById('mapContainer').clientHeight;
+                window.parent.postMessage(imageHeight, '*');
+            };
+            var map, marker;
+            function init() {
+                var getList = UrlGet();
+                var height = (getList['height'] && getList['height'] != 'underfined') ? getList['height'] : "250px";
+                var width = (getList['width'] && getList['width'] != 'underfined') ? getList['width'] : "100%";
+                var address = (getList['address'] && getList['address'] != 'underfined') ? getList['address'] : '北京朝阳区';
+                var lat = (getList['lat'] && getList['lat'] != 'underfined') ? parseFloat(getList['lat']) : 116.331398;//37.775;
+                var long = (getList['long'] && getList['long'] != 'underfined') ? parseFloat(getList['long']) : 39.897445;//-122.418333;
+                var ismarker = (getList['marker'] && getList['marker'] != 'underfined') ? parseInt(getList['marker']) : 1;
+                var zoom = (getList['zoom'] && getList['zoom'] != 'underfined') ? parseInt(getList['zoom']) : 15;
+                var align = (getList['align'] && getList['align'] != 'underfined') ? parseInt(getList['align']) : 1;
+                var overviewmap = (getList['overview'] && getList['overview'] != 'underfined') ? parseInt(getList['overview']) : 0;
+                var control = (getList['control'] && getList['control'] != 'underfined') ? parseInt(getList['control']) : 3;
+                var scale = (getList['scale'] && getList['scale'] != 'underfined') ? parseInt(getList['scale']) : 0;
+                var mapDiv = document.getElementById("map");
+                mapDiv.style.height = height;
+                mapDiv.style.width = width;
+                switch (align) {
+                    case 1:
+                        mapDiv.style.margin = '';
+                        break;
+                    case 2:
+                        mapDiv.style.margin = '0 auto';
+                        break;
+                    case 3:
+                        mapDiv.style.margin = '0 0 0 auto';
+                        break;
+                }
+                map = new BMap.Map("map");
+                var map_x = lat;
+                var map_y = long;
+                var marker_x = map_x;
+                var marker_y = map_y;
+                var point = new BMap.Point(map_x, map_y);
+                // 创建地址解析器实例
+                var myGeo = new BMap.Geocoder();
+                // 将地址解析结果显示在地图上,并调整地图视野
+                myGeo.getPoint(address, function (point) {
+                    if (point) {
+                        map.centerAndZoom(point, zoom);
+                        if (ismarker == 1) {
+                            marker = new BMap.Marker(point); // 创建标注
+                            map.addOverlay(marker);             // 将标注添加到地图中
+                            marker.enableDragging();
+                        }
+                    }
+                }, "北京朝阳区");
+                // 添加带有定位的导航控件
+                var navigationControl = new BMap.NavigationControl({
+                    // 靠左上角位置
+                    anchor: BMAP_ANCHOR_TOP_LEFT,
+                    // LARGE类型
+                    type: BMAP_NAVIGATION_CONTROL_LARGE,
+                    // 启用显示定位
+                    enableGeolocation: true
+                });
+                map.addControl(navigationControl);
+
+//                var touchSupported = (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch),
+//                  forceTouch = false;
+//                var isPanControl=false;
+//                var isZoomControl=false;
+//                var zoomStyle=google.maps.ZoomControlStyle.SMALL;
+//                switch (control) {
+//                    case 0:
+//                        break;
+//                    case 1:
+//                        isPanControl=true;
+//                        isZoomControl=true;
+//                        zoomStyle=google.maps.ZoomControlStyle.LARGE;
+//                        break;
+//                    case 2:
+//                        isPanControl=true;
+//                        isZoomControl=true;
+//                        break;
+//                    case 3:
+//                        isZoomControl=true;
+//                        break;
+//                }
+//                var myLatLng = new google.maps.LatLng(lat, long);
+//                var mapOptions = {
+//                    scrollwheel: false,
+//                    center: myLatLng,
+//                    zoom: zoom,
+//                    panControl: isPanControl,
+//                    zoomControl: isZoomControl, zoomControlOptions: {style:zoomStyle},
+//                    overviewMapControl: (overviewmap == 1 ? true : false),
+//                    overviewMapControlOptions: {opened: (overviewmap == 1 ? true : false)},
+//                    scaleControl: (scale==1?true:false),
+//                    mapTypeControl: false,
+//                    streetViewControl: false,
+//                    mapTypeId: google.maps.MapTypeId.ROADMAP
+//                };
+//
+//                if (touchSupported || forceTouch) {
+//                    mapOptions.draggable = false;
+//                    mapOptions.panControl = isPanControl;
+//                    mapOptions.scrollwheel = false;
+//                    mapOptions.zoomControlOptions = {style: zoomStyle};
+//                    mapOptions.zoomControl = isZoomControl;
+//                }
+//
+//                var map = new google.maps.Map(mapDiv, mapOptions);
+//                if (marker == 1)
+//                    var point = new google.maps.Marker({position: myLatLng, map: map});
+            }
+
+            //获取get信息
+            function UrlGet() {
+                var aQuery = window.location.href.split("?");//取得Get参数  
+                var aGET = new Array();
+                if (aQuery.length > 1)
+                {
+                    var aBuf = aQuery[1].split("&");
+                    for (var i = 0, iLoop = aBuf.length; i < iLoop; i++)
+                    {
+                        var aTmp = aBuf[i].split("=");//分离key与Value  
+                        aGET[aTmp[0]] = aTmp[1];
+                    }
+                }
+                return aGET;
+            }
+            loadJScript();
+        </script>
+    </body>
+
+</html>

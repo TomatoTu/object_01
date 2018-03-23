@@ -1,0 +1,55 @@
+@charset "utf-8";
+.w-nav > .nav_inner > li:hover > a, .w-nav > .nav_inner > li:hover > .li-parent-div > a, .w-nav > .nav_inner > li.active > a, .w-nav > .nav_inner > li.active > .li-parent-div > a{ background:#D14B02;}
+/*---------------------组件------------------*/
+.btn-default-w{background:#EA5503;}
+.icon-social{background-image:url(../images/icon-social-w-5.png);}
+.search-defaut-w .search-btn-w{background:url("../images/input-search-white.png") no-repeat center #EA5503;}
+/*-------------------footer-------------------*/
+.w-footer{background:#D14B02;}
+.w-footer,.w-footer a{color:#fff;}
+.w-footer .icon-social{background-image:url(../images/icon-social-foot-w-white.png);}
+/*----------------系统-------------------*/
+.systitle{background:#EA5503;}
+.w-prd-list-cell .w-prd-btns a.btn-buy{background:#EA5503; border-color:#EA5503;}
+/*-------------新闻--------------------*/
+.newsDetail .newsTitle{color:#232323;}
+.w-News-list5 li .news-item .data-day, .w-adNews1 li .news-item .data-day{background:#EA5503;}
+.w-adNews3, .w-adNews3 .w-adNews-imgs .adNews3prev, .w-adNews3 .w-adNews-imgs .adNews3next{background-color:#EA5503;}
+.w-adNews3 .w-adNews-texts li{border-color:#F4AA81;}
+/*-----------------------会员中心和购物车--------------------*/
+.w-admin-header{ background:#fff;}
+.w-admin-top .w-sign .w-admin-register, .w-admin-top .w-sign .w-admin-person,.w-admin-shopCart a .fa-shopping-cart,.order-progress .order-progress-text > div.cur,.orderA .orderA-statue .orderA-s,.orderA .order-route .order-route-notice a,.orderA .orderA-statue .orderA-btn .btn-green-A,.w-admin-sidemenu li.cur a,.payStatue-nav a.cur,.personInfoA .uploadimgA{ color:#EA5503;}
+.order-progress .order-progress-line .order-progress-line-sec.cur .curcle{background-image:url("../images/progress_complete_5.png");}
+.order-progress .order-progress-line .order-progress-line-sec.cur .line,.checkbox_tel input[type="checkbox"]:checked + label,.btn-greenC,.btn-greenA{background-color:#EA5503;}
+.orderA .orderA-statue .orderA-btn .btn-green-A,.section-con-new,.payStatue-nav a.cur{ border-color:#EA5503;}
+.orderSum-item .imgB,.order-routes .order-routeItem.cur .order-routeItem-img .imgA{background-color:#FEE2D3;}
+.order-routes .order-routeItem.cur .order-routeItem-img .lineA{background-image:url(../images/routelinecur_5.png);}
+.login-checkA input.checked[type="checkbox"] + label{background-image:url("../images/login-checked-5.png");}
+/*----------------------标题------------------------*/
+.title-h-in h2{ color:#EA5503;}
+.w-title1 .simpline{background:#EA5503;}
+.w-title5 h2{border-color:#EA5503;}
+.w-title7{ border-left-color:#EA5503;}
+.w-title7 .more{background-color:#EA5503;}
+.w-title15{border-color:#EA5503;}
+@media (min-width:768px){
+	.w-nav{background:#EA5503;}
+	.w-nav .submenu{background:#D14B02; opacity:0.9; *filter:alpha(opacity=90); filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);}
+    .w-nav .submenu li{ border-bottom:1px solid #F75802;}
+	.w-nav .submenu li:last-child{border-bottom:0;}
+	.w-nav .submenu li:hover > a, .w-nav .submenu  li:hover > .li-parent-div > a, .w-nav .submenu li.active > a, .w-nav .submenu li.active  >.li-parent-div > a{ background:#F75802;}
+	.topLogBox{background:#EA5503;}
+	.w-com-menu-V > .w-com-menu-in > .ul-parent > .li-parent > .div-parent{ background:#D14B02; border-color:#EA5302;}
+	.w-com-menu-H > .w-com-menu-in{background:#EA5503;}
+    .w-com-menu-H >.w-com-menu-in>.ul-parent> li:hover >.div-parent a,.w-com-menu-H >.w-com-menu-in>.ul-parent> li.cur >.div-parent a{ background:#D14B02; 
+color:#fff;}
+    .w-com-menu-H .ul-submenu li:hover> .div-parent >a,.w-com-menu-H .ul-submenu li.cur> .div-parent >a{ background:#D14B02; color:#fff; }
+}
+@media (max-width:767px){
+	.w-logo h1, .w-logo a{color:#fff;}
+	.w-com-menu li >.div-parent:hover a,.w-com-menu  li.cur >.div-parent a{ background:#333; }
+	.w-com-menu .ul-submenu li > .div-parent:hover a, .w-com-menu .ul-submenu li.cur > .div-parent a{background:#555;}
+	/*-----------------------会员中心和购物车--------------------*/
+	.w-header,.w-admin-header,.body-login .w-admin-header{ background:#EA5503;}
+    .order-routes .order-routeItem.cur .order-routeItem-img .lineA{background-image:url(../images/routelinecurTel_5.png);}
+}

@@ -1,0 +1,49 @@
+<div style="" class="images-pop">
+    <div class="images-pop-in">
+        <div class="pop-close"><i class="icon-other icon-popclose"></i></div>
+        <div class="images-pop-menu clearfix">
+            <ul class="clearfix">
+                <li data-tab="1" class="cur"><a><i class="icon-tool icon-myComputer"></i><p>我的电脑</p></a></li>
+                <li data-tab="2" style="display: none"><a><i class="icon-tool icon-imgSearch"></i><p>Search</p></a></li>
+                <li data-tab="3" style="display: none"><a><i class="icon-tool icon-favorites"></i><p>Favorites</p></a></li>
+                <li data-tab="4"><a><i class="icon-tool icon-imagesURL"></i><p>网络图片</p></a></li>
+            </ul>
+        </div>
+        <div class="images-uploade-content">
+            <!--My Computer-->
+            <div id="imagesFrom1" class="images-from-myComputer">
+                <div class="images-drag-box" id="imageDragBox">
+                   <div class="images-empty-pop"><img src="/images/images-empty-pop.png"></div>
+                    <p class="font-big">拖拉上传</p>
+                    <div id="imageUpImg" class="btn btn-green-b btn-upload-images"></div>
+                    <p class="p_notice">文件支持格式:.png、.jpg、.jpeg、.gif、.bmp，大小2M以内。</p>
+                </div>
+            </div>
+            <!--My Computer end-->
+            <!--Search-->
+            <div id="imagesFrom2" style="display:none;" class="images-from-search">
+                <p class="font-big">Search for Images</p>
+                <div class="images-search">
+                    <input type="text" class="images-search-text">
+                    <input type="button" class="btn btn-green-b btn-images-search-b" value="Search">
+                </div>  
+            </div>
+            <!--Search end-->
+            <!--Search-->
+            <div id="imagesFrom3" style="display:none;" class="images-from-favorites">
+
+            </div>
+            <!--Search end-->
+            <!--Images URL-->
+            <div id="imagesFrom4" style="display:none;" class="images-from-URL">
+                <p class="font-big">请输入网络图片路径</p>
+                <div class="images-search">
+                    <input type="text" class="images-search-text" id="comImageSearchUrl" >
+                    <input type="button" class="btn btn-green-b btn-images-search-b" id="comImageSearch" value="确定">
+                </div> 
+                <p>格式: http://www.mysite.com/image.jpg(GIF、PNG、JPG)</p> 
+            </div>
+            <!--Images URL end-->
+        </div>
+    </div>
+</div>
